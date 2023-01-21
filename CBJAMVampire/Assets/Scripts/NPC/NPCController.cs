@@ -1,29 +1,79 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class NPCController : MonoBehaviour
 {
     
     [Header("Movement Parameters")]
-    [SerializeField] private float walkSpeed = 1f;
-    [SerializeField] private float runSpeed = 2f;
+    [SerializeField] private float walkSpeed = 2f;
+    [SerializeField] private float runSpeed = 3f;
     
     [Header("FOV Parameters")]
     [SerializeField] private float viewRadius = 5f;
     [SerializeField] private float viewAngle = 90f;
     [SerializeField] private LayerMask playerMask;
     [SerializeField] private LayerMask obstructionMask;
+    [SerializeField] private float minimumDistanceToPlayer = 1f;
     
     private GameObject player;
+    private Mover mover;
     private Transform target;
     private bool canSeePlayer;
+    private bool sawPlayer;
+    private bool isInfected;
 
+    public enum NPCState
+    {
+        Idle,
+        RunningAway,
+        Following
+    }
     
+    [SerializeField] private NPCState currentState;
+
+    private void Awake()
+    {
+        mover = GetComponent<Mover>();
+        sawPlayer = false;
+        isInfected = false;
+    }
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVroutine());
+    }
+
+    private void FixedUpdate()
+    {
+        HandleStates();
+        HandleBehaviour();
+    }
+
+    private void HandleStates()
+    {
+        if (isInfected)
+            currentState = NPCState.Following;
+        else if ((sawPlayer || canSeePlayer) && !isInfected)
+            currentState = NPCState.RunningAway;
+        else
+            currentState = NPCState.Idle;
+    }
+    
+    private void HandleBehaviour()
+    {
+        if (currentState == NPCState.Idle)
+            return;
+        else if (currentState == NPCState.RunningAway)
+        {
+            GetComponent<SpriteRenderer>().color = Color.yellow;
+            RunAwayFromPlayer();
+        }
+        else if (currentState == NPCState.Following)
+            FollowPlayer();
     }
 
     private IEnumerator FOVroutine()
@@ -54,6 +104,7 @@ public class NPCController : MonoBehaviour
                 {
                     Debug.Log("Player in FOV");
                     canSeePlayer = true;
+                    sawPlayer = true;
                 }
                 else
                     canSeePlayer = false;
@@ -63,6 +114,35 @@ public class NPCController : MonoBehaviour
         }
         else
             canSeePlayer = false;
+    }
+
+    private void FollowPlayer()
+    {
+        if (Vector2.Distance(transform.position, player.transform.position) > minimumDistanceToPlayer)
+        {
+            mover.MoveTo(player.transform.position, runSpeed);
+        }
+        else if (Vector2.Distance(transform.position, player.transform.position) < minimumDistanceToPlayer - .5f)
+        {
+            RunAwayFromPlayer();
+        }
+        else
+        {
+            mover.Cancel();
+        }
+    }
+    
+    private void RunAwayFromPlayer()
+    {
+        Vector2 direction = (transform.position - player.transform.position).normalized;
+        Vector3 runAwayPosition = transform.position + new Vector3(direction.x, direction.y, 1f) * 2f;
+        mover.MoveTo(runAwayPosition, runSpeed);
+    }
+    
+    public void Infect()
+    {
+        GetComponent<SpriteRenderer>().color = Color.red;
+        isInfected = true;
     }
     
     //FOV Gizmos
@@ -85,4 +165,5 @@ public class NPCController : MonoBehaviour
             Gizmos.DrawRay(transform.position, (target.transform.position - transform.position).normalized * viewRadius);    
         }
     }
+    
 }

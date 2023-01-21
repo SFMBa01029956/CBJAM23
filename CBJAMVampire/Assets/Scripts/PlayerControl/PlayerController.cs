@@ -38,12 +38,6 @@ public class PlayerController : MonoBehaviour
         //movement.action.performed += onMove;
     }
 
-    private void OnDisable()
-    {
-        interact.action.performed -= Interact;
-        //movement.action.performed -= onMove;
-    }
-    
     void Update()
     {
         movementInput = movement.action.ReadValue<Vector2>();
@@ -52,8 +46,6 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         HandleMovement();
-        
-        
     }
 
     private void HandleMovement()
@@ -70,12 +62,16 @@ public class PlayerController : MonoBehaviour
     
     private void Interact(InputAction.CallbackContext obj)
     {
-        throw new NotImplementedException();
+        if (!canInteract) return;
+        if (target.CompareTag("NPC"))
+        {
+            target.GetComponent<NPCController>().Infect();
+        }
     }
 
     private IEnumerator FOVroutine()
     {
-        WaitForSeconds wait = new WaitForSeconds(0.2f);
+        WaitForSeconds wait = new WaitForSeconds(0.1f);
 
         while (true)
         {
