@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,13 +13,19 @@ public class Mover : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
+        // agent.updateRotation = false;
+        // agent.updateUpAxis = false;
     }
 
-    public void MoveTo(Vector3 destination, float speedFraction)
+    private void Update()
     {
-        //transform.LookAt(new Vector2(destination.x, destination.y));
+        transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
+    }
+
+    public void MoveTo(Vector3 destination, float speedFraction = 2f)
+    {
+        transform.LookAt(destination);
+
         agent.SetDestination(destination);
         agent.speed = maxSpeed * Mathf.Clamp01(speedFraction);
         agent.isStopped = false;
