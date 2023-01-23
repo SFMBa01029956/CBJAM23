@@ -110,7 +110,7 @@ public class NPCController : MonoBehaviour
                 {
                     canSeePlayer = true;
                     sawPlayer = true;
-                    if (!screamSoundEffect.isPlaying)
+                    if (!screamSoundEffect.isPlaying && !isInfected)
                     {
                         screamSoundEffect.Play();
                     }
