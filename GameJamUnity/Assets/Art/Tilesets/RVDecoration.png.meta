@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -6178,7 +6178,7 @@ TextureImporter:
       RVDecoration_14: 627614395
       RVDecoration_79: -241424237
       RVDecoration_195: -1197741977
-      RVDecoration_252: 99211998
+      RVDecoration_246: 1295179255
       RVDecoration_145: 484253201
       RVDecoration_94: -487095438
       RVDecoration_148: 2086917100
@@ -6195,26 +6195,25 @@ TextureImporter:
       RVDecoration_283: 1730505057
       RVDecoration_102: 637331284
       RVDecoration_133: -1019078895
-      RVDecoration_245: 34022183
       RVDecoration_95: 1686092450
       RVDecoration_115: -1536283411
       RVDecoration_114: 193493956
       RVDecoration_108: 1130336239
+      RVDecoration_129: -827910792
       RVDecoration_87: -1906364245
       RVDecoration_24: -1889356451
       RVDecoration_4: 1624599671
       RVDecoration_49: -94476589
       RVDecoration_26: 649872452
-      RVDecoration_97: 477720633
       RVDecoration_158: -52669136
+      RVDecoration_97: 477720633
       RVDecoration_262: -1437290160
       RVDecoration_84: 842359357
       RVDecoration_234: 118331518
       RVDecoration_233: -912939220
-      RVDecoration_129: -827910792
+      RVDecoration_178: -2003999631
       RVDecoration_5: -1900440197
       RVDecoration_85: 1666430953
-      RVDecoration_178: -2003999631
       RVDecoration_99: 1434142507
       RVDecoration_81: -1297855657
       RVDecoration_10: -548555126
@@ -6448,21 +6447,22 @@ TextureImporter:
       RVDecoration_134: 998271346
       RVDecoration_237: 247311251
       RVDecoration_218: 814217693
+      RVDecoration_245: 34022183
       RVDecoration_176: 1749155491
       RVDecoration_207: 883614140
       RVDecoration_29: 1837741961
       RVDecoration_38: -1158039302
       RVDecoration_196: 1757276039
-      RVDecoration_241: -336626037
       RVDecoration_287: 1258772549
       RVDecoration_189: 805521962
+      RVDecoration_241: -336626037
       RVDecoration_201: 294154184
       RVDecoration_106: -1683417586
+      RVDecoration_22: -1769800227
+      RVDecoration_252: 99211998
+      RVDecoration_112: -1819770867
       RVDecoration_58: -1290119225
       RVDecoration_101: 1091978616
-      RVDecoration_112: -1819770867
-      RVDecoration_22: -1769800227
-      RVDecoration_246: 1295179255
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

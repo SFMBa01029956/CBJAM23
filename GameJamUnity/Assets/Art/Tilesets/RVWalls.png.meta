@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -5366,8 +5366,8 @@ TextureImporter:
       RVWalls_68: -1060030762
       RVWalls_71: -1929668331
       RVWalls_18: 1663065689
-      RVWalls_177: -394863326
       RVWalls_192: 85915680
+      RVWalls_177: -394863326
       RVWalls_238: -597025297
       RVWalls_87: 1803274092
       RVWalls_64: -160209363
@@ -5400,11 +5400,11 @@ TextureImporter:
       RVWalls_175: -168927504
       RVWalls_20: -1380206720
       RVWalls_40: -1578432775
-      RVWalls_105: -179736415
-      RVWalls_123: 1054139968
-      RVWalls_202: -1255120582
       RVWalls_152: 1361133541
+      RVWalls_123: 1054139968
       RVWalls_211: 1678388225
+      RVWalls_105: -179736415
+      RVWalls_202: -1255120582
       RVWalls_179: -2027221629
       RVWalls_155: -999561683
       RVWalls_229: 1060769399

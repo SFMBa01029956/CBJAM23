@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -1641,7 +1641,6 @@ TextureImporter:
     nameFileIdTable:
       RVDoorsWindows_32: -469051198
       RVDoorsWindows_37: 1545891216
-      RVDoorsWindows_62: -1753785846
       RVDoorsWindows_47: -2117720889
       RVDoorsWindows_20: 1830570540
       RVDoorsWindows_30: 945131165
@@ -1694,6 +1693,7 @@ TextureImporter:
       RVDoorsWindows_28: 1903257267
       RVDoorsWindows_4: 1486288970
       RVDoorsWindows_14: -250918812
+      RVDoorsWindows_62: -1753785846
       RVDoorsWindows_58: -1028964971
       RVDoorsWindows_39: -1139974827
       RVDoorsWindows_57: 889070447

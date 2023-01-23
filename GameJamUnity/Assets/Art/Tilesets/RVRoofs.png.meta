@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -11263,15 +11263,15 @@ TextureImporter:
       RVRoofs_87: -1546476234
       RVRoofs_297: -533267780
       RVRoofs_295: 321367645
-      RVRoofs_331: 2033386907
-      RVRoofs_347: 1212293447
       RVRoofs_440: -909329488
+      RVRoofs_347: 1212293447
+      RVRoofs_331: 2033386907
       RVRoofs_259: -995396315
       RVRoofs_13: -474238246
       RVRoofs_17: -453999240
-      RVRoofs_168: 1174558673
       RVRoofs_350: -1835156303
       RVRoofs_397: -666896327
+      RVRoofs_168: 1174558673
       RVRoofs_384: -279841694
       RVRoofs_219: -663156997
       RVRoofs_298: -2036320103
@@ -11358,12 +11358,12 @@ TextureImporter:
       RVRoofs_189: -1927036461
       RVRoofs_322: -1739437078
       RVRoofs_59: -1785121805
-      RVRoofs_64: 1379100464
       RVRoofs_269: 557179466
-      RVRoofs_497: 38123765
+      RVRoofs_64: 1379100464
       RVRoofs_432: 1300512957
       RVRoofs_67: -1268567544
       RVRoofs_340: -1309026772
+      RVRoofs_497: 38123765
       RVRoofs_142: -1667163622
       RVRoofs_43: -1231172375
       RVRoofs_386: -1793300326
@@ -11439,8 +11439,8 @@ TextureImporter:
       RVRoofs_197: -1806048133
       RVRoofs_95: 1527298721
       RVRoofs_48: -2034606328
-      RVRoofs_233: 300492832
       RVRoofs_62: 48158578
+      RVRoofs_233: 300492832
       RVRoofs_501: 246570776
       RVRoofs_105: 230679118
       RVRoofs_334: -788066719
@@ -11518,27 +11518,28 @@ TextureImporter:
       RVRoofs_141: -2125616933
       RVRoofs_148: 593544112
       RVRoofs_138: 1559547272
-      RVRoofs_51: -1073711366
       RVRoofs_482: 1741928671
+      RVRoofs_51: -1073711366
       RVRoofs_253: 1032398760
       RVRoofs_323: -1204054892
-      RVRoofs_330: -1602988674
-      RVRoofs_7: -59061663
       RVRoofs_377: -54006809
+      RVRoofs_7: -59061663
+      RVRoofs_400: -227294670
       RVRoofs_462: -284351269
       RVRoofs_201: 1339122161
-      RVRoofs_400: -227294670
       RVRoofs_40: 820531715
       RVRoofs_20: -607188027
       RVRoofs_173: 364422773
       RVRoofs_175: 1920551637
-      RVRoofs_184: -1249605368
       RVRoofs_281: 458533875
-      RVRoofs_32: -359518329
-      RVRoofs_200: 315197765
-      RVRoofs_154: -188572440
-      RVRoofs_318: 1603431894
       RVRoofs_483: 1357827421
+      RVRoofs_32: -359518329
+      RVRoofs_184: -1249605368
+      RVRoofs_154: -188572440
+      RVRoofs_200: 315197765
+      RVRoofs_330: -1602988674
+      RVRoofs_520: -1307774295
+      RVRoofs_318: 1603431894
       RVRoofs_415: -1329711344
       RVRoofs_162: 1256617228
       RVRoofs_192: -1178914038
@@ -11554,7 +11555,6 @@ TextureImporter:
       RVRoofs_484: 1533474447
       RVRoofs_98: 1405398421
       RVRoofs_494: -246328071
-      RVRoofs_520: -1307774295
       RVRoofs_181: -45157355
       RVRoofs_489: 59908604
       RVRoofs_27: -813672731

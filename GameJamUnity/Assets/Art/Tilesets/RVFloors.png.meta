@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -1721,9 +1721,9 @@ TextureImporter:
       RVFloors_33: -1416342063
       RVFloors_66: 275334589
       RVFloors_20: -2106082392
-      RVFloors_26: -511380987
       RVFloors_53: 976057795
       RVFloors_72: -1622454637
+      RVFloors_26: -511380987
       RVFloors_34: -1706265148
       RVFloors_41: -1308294384
       RVFloors_57: 1596114411

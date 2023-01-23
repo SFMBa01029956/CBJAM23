@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -6312,8 +6312,8 @@ TextureImporter:
       RVNature_213: 1502629147
       RVNature_54: -464123905
       RVNature_254: 389877580
-      RVNature_25: -2120004702
       RVNature_258: -527355190
+      RVNature_25: -2120004702
       RVNature_270: 1112244647
       RVNature_67: -1092404838
       RVNature_198: 742615667
@@ -6353,8 +6353,8 @@ TextureImporter:
       RVNature_80: -1818287448
       RVNature_47: -910803089
       RVNature_203: 367184406
-      RVNature_210: -1501217703
       RVNature_235: -1042753159
+      RVNature_210: -1501217703
       RVNature_174: -311594348
       RVNature_232: -412400715
       RVNature_92: 1456660798
@@ -6421,31 +6421,31 @@ TextureImporter:
       RVNature_93: 50293603
       RVNature_84: -2075016896
       RVNature_6: 221379871
+      RVNature_98: 706905764
+      RVNature_72: 752141707
       RVNature_167: 425973000
-      RVNature_52: 1345565150
-      RVNature_256: 1463216987
       RVNature_217: 1419079690
       RVNature_106: 840904916
       RVNature_286: 484490489
-      RVNature_98: 706905764
       RVNature_74: -49781357
       RVNature_244: 2089596599
       RVNature_169: 1020823185
       RVNature_70: 1555538298
       RVNature_20: 2133314058
       RVNature_96: -1037539368
-      RVNature_261: 371092974
+      RVNature_256: 1463216987
       RVNature_284: 1935559491
       RVNature_108: 362368978
       RVNature_79: -2052878945
       RVNature_196: -1775091702
       RVNature_229: 757831648
-      RVNature_72: 752141707
+      RVNature_261: 371092974
       RVNature_177: -1005204290
       RVNature_97: -2067189035
       RVNature_168: 847469443
       RVNature_259: -313368527
       RVNature_263: 500457373
+      RVNature_52: 1345565150
       RVNature_231: -2059330237
       RVNature_129: -1339473425
       RVNature_110: 799295623
