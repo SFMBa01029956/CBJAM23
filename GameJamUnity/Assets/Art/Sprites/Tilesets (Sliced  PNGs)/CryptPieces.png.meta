@@ -913,7 +913,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       CryptPieces_8: -745571428
-      CryptPieces_5: 2089192480
+      CryptPieces_10: 2033906487
       crypt_assets_1: -511096960
       crypt_assets_6: -1628465107
       crypt_assets_19: 1641060252
@@ -943,8 +943,8 @@ TextureImporter:
       CryptPieces_3: 766521799
       CryptPieces_11: 620115910
       CryptPieces_2: -1901844215
-      CryptPieces_10: 2033906487
       crypt_assets_7: -1257638863
+      CryptPieces_5: 2089192480
       CryptPieces_7: -1646902972
       CryptPieces_4: -1925459300
   spritePackingTag: 
